@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Clase 16</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row p-4 m-3">
+        <div class="col-12 text-center d=fs-1">Listado de items</div>
+
+        <div class="col-2">Nombre del Item</div>
+
+        <div class="col-8">
+          <input type="text" class="form-control" name="items" id="inputItem" />
+        </div>
+
+        <div class="col-2">
+          <button class="btn btn-dark" id="btnAgregarItem">Agregar</button>
+        </div>
+      </div>
+
+      <div class="row p-4 m-3">
+        <div class="col-12">
+          <table class="table table-strip">
+            <thead>
+              <tr>
+                <td>Nombre</td>
+                <td>Accion</td>
+              </tr>
+            </thead>
+            <!--para que la lista se vaya construyendo en el cuerpo de la tabla se le asigna id-->
+            <tbody id="listaItems"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS desde un archivo externo -->
+    <script src="./index.js"></script>
+  </body>
+</html>
